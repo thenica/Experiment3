@@ -1,0 +1,49 @@
+#include <iostream>
+using namespace std;
+int main()
+
+{
+	double x[10];
+	int y;
+	double sum, average;
+	double smallest=0.0;
+	double largest=0.0;
+	double num=0.0;
+	
+	cout <<"Enter 10 numbers:";
+	cout <<"\n";
+	
+	for(y=0;y<10;y++)
+	x[y]=0.0;
+	
+	for(y=0;y<10;y++)
+	cin >> x[y];
+	
+	smallest=x[0];
+	largest=x[0];
+	for(y=1;y<10;y++)
+	{
+		num = x[y];
+		if (num<smallest)
+		smallest=num;
+		
+		if (num>largest)
+		largest=num;	
+	}
+	
+	cout <<"Smallest Number: " << smallest <<"\n";
+	cout <<"Largest Number: " << largest <<"\n";
+	
+
+	sum=0;
+	for(y=0;y<10;y++)
+	sum=sum+x[y];
+	cout <<"sum= " <<sum <<"\n";
+
+	for(y=0;y<10;y++)
+	average=sum/10;
+	cout<<"average= "<<average;
+	
+	return 0;
+	
+}
