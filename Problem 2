@@ -1,0 +1,74 @@
+#include <iostream>
+using namespace std;
+int main()
+
+{
+	int a[7];
+	int b[7];
+	int c[7];
+	int tempA, tempB, tempC;
+	 
+	cout <<"Enter all temperature for a week of Province A: \n";
+	
+	for(tempA=0;tempA<7;tempA++)
+	a[tempA]=0;
+	
+	for(tempA=0;tempA<7;tempA++)
+		{
+		cout <<"Province A Day "<< tempA+1 << ": ";
+		cin>> a[tempA];	
+		}
+	cout <<"\n";
+	cout <<"Enter all temperature for a week of Province B: \n";
+	
+	for(tempB=0;tempB<7;tempB++)
+	b[tempB]=0;
+	
+	for(tempB=0;tempB<7;tempB++)
+		{
+			cout <<"Province B Day "<< tempB+1 << ": ";
+			cin>> b[tempB];
+		}
+	cout <<"\n";
+		cout <<"Enter all temperature for a week of Province C: \n";
+	
+	for(tempC=0;tempC<7;tempC++)
+	c[tempC]=0;
+	
+	for(tempC=0;tempC<7;tempC++)
+	
+		{
+			cout <<"Province C Day "<< tempC+1 << ": ";
+			cin>> c[tempC];
+		 
+		}
+	cout <<"\n";
+	cout <<"Displaying values: "<< "\n";
+		cout<<"Province A, Day 1= "<< a[0] << "\n";
+		cout<<"Province A, Day 2= "<< a[1]<< "\n";
+		cout<<"Province A, Day 3= "<< a[2]<< "\n";
+		cout<<"Province A, Day 4= "<< a[3]<< "\n";
+		cout<<"Province A, Day 5= "<< a[4]<< "\n";
+		cout<<"Province A, Day 6= "<< a[5]<< "\n";
+		cout<<"Province A, Day 7= "<< a[6]<< "\n";
+		
+		cout<<"Province B, Day 1= "<< b[0] << "\n";
+		cout<<"Province B, Day 2= "<< b[1]<< "\n";
+		cout<<"Province B, Day 3= "<< b[2]<< "\n";
+		cout<<"Province B, Day 4= "<< b[3]<< "\n";
+		cout<<"Province B, Day 5= "<< b[4]<< "\n";
+		cout<<"Province B, Day 6= "<< b[5]<< "\n";
+		cout<<"Province B, Day 7= "<< b[6]<< "\n";
+		
+		cout<<"Province C, Day 1= "<< c[0] << "\n";
+		cout<<"Province C, Day 2= "<< c[1]<< "\n";
+		cout<<"Province C, Day 3= "<< c[2]<< "\n";
+		cout<<"Province C, Day 4= "<< c[3]<< "\n";
+		cout<<"Province C, Day 5= "<< c[4]<< "\n";
+		cout<<"Province C, Day 6= "<< c[5]<< "\n";
+		cout<<"Province C, Day 7= "<< c[6]<< "\n";
+		
+	
+	return 0;
+	
+}
