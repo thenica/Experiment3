@@ -1,0 +1,44 @@
+//This program prints the letters in a char array in reverse
+// The program also shows the size of the array by using selection sort. 
+
+#include <iostream>
+#include <string>
+
+
+using namespace std;
+int main ()
+{
+char stringArray [100];
+int i, size=0;
+
+cout <<"Enter character array:  ";
+cin>>stringArray;
+cout<<"\n";
+
+for (i=0; stringArray[i] !='\0';i++)
+{
+	size++;	
+}	
+
+cout <<"The size of the array is: ";
+cout<<size<<"\n";
+
+cout <<"The reverse order of the array is: ";
+for (i=0;i<size;i++)
+{
+	for(int j=i+1; j< size; j++)
+	{
+		if (stringArray[i]>stringArray[j])
+		{
+			int temp=stringArray[i];
+			stringArray[i]=stringArray[j];
+			stringArray[j]=temp;
+		}
+	}
+}
+for(i=0;i<size;i++)
+{
+	cout<<stringArray[i];
+}
+return 0;
+}
